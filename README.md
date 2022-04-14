@@ -32,3 +32,13 @@ copy the codes  :
 ```bash
 
 ```
+
+##If It's going wrong like
+```bash
+    OpenSSL SSL_read: Connection was aborted, errno 10053
+```
+then:
+```bash
+    git config --global http.postBuffer 524288000
+    git config http.sslVerify "false"
+```
