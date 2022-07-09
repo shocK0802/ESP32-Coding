@@ -33,7 +33,7 @@ copy the codes  :
 
 ```
 
-##If It's going wrong like
+## If It's going wrong like
 ```bash
     OpenSSL SSL_read: Connection was aborted, errno 10053
 ```
@@ -42,3 +42,5 @@ then:
     git config --global http.postBuffer 524288000
     git config http.sslVerify "false"
 ```
+## Get started
+1.press F1 to show the sample code in ESP-IDF
