@@ -33,14 +33,25 @@ copy the codes  :
 
 ```
 
-## If It's going wrong like
+## 1.If It's going wrong like
 ```bash
     OpenSSL SSL_read: Connection was aborted, errno 10053
 ```
 then:
 ```bash
     git config --global http.postBuffer 524288000
+
     git config http.sslVerify "false"
+```
+
+## 2.If It's going wrong like
+```bash
+    Failed to connect to github.com port 443 after 21029 ms: Timed out
+```
+then:
+```bash
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
 ```
 ## Get started
 1.press F1 to show the sample code in ESP-IDF
