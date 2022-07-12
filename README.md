@@ -33,7 +33,7 @@ copy the codes  :
 
 ```
 
-## 1.If It's going wrong like
+### 1.If It's going wrong like
 ```bash
     OpenSSL SSL_read: Connection was aborted, errno 10053
 ```
@@ -44,7 +44,7 @@ then:
     git config http.sslVerify "false"
 ```
 
-## 2.If It's going wrong like
+### 2.If It's going wrong like
 ```bash
     Failed to connect to github.com port 443 after 21029 ms: Timed out
 ```
@@ -55,3 +55,25 @@ then:
 ```
 ## Get started
 1.press F1 to show the sample code in ESP-IDF
+
+
+## Experience on Writing CMakeLists.txt
+
+Quickly create a sub-project named XXX in the directory
+```bash
+    idf.py -C components create-component XXX
+```
+how to write a series of CMakeLists?
+
+Refer to this [link](https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/build-system.html#example-component-requirements)
+
+#### Attention
+
+```c
+idf_component_register(SRCS "OLED.c"
+                    INCLUDE_DIRS "."
+                    )
+
+//up there     INCLUDE_DIRS "."  the dot means current file 
+//when we need to define the dependence relationship, it's important to confirm that the location of the file defines right
+```

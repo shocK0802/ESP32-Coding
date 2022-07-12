@@ -5,6 +5,6 @@
 
 PROJECT_NAME := OLED
 
-EXTRA_COMPONENT_DIRS += $(PROJECT_PATH)/import
+#EXTRA_COMPONENT_DIRS += $(PROJECT_PATH)/import
 
 include $(IDF_PATH)/make/project.mk
