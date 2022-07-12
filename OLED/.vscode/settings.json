@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "files.associations": {
+    "oled.h": "c",
+    "task.h": "c",
+    "fonts.h": "c",
+    "esp_system.h": "c"
+  },
+  "idf.adapterTargetName": "esp32"
+}
